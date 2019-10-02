@@ -9,15 +9,35 @@ body
 }
 
 
-.icon{
-	display: block;
+.list{
+	display: flex;
+	flex-wrap: wrap;
 }
+
+/*.icon{
+	display: block;
+}*/
 
 .close img{
 	height: 30px;
 	width: 30px;
 	background-color: #000;
 	float: right;
+}
+
+.list .row{
+	padding: 15px 0;
+	text-align: center;
+	font-size: 18px;
+}
+
+.list a{
+	text-decoration: none !important;
+	font-weight: bold;
+}
+
+.list .col-6{
+	padding: 15px;
 }
 
 
@@ -31,6 +51,7 @@ body
 	box-shadow: 0px 3px 20px 2px rgba(0,0,0,0.28);
 	display: flex;
 	flex-direction: column;
+	width: 100%;
 }
 
 
@@ -88,9 +109,22 @@ header .explana p{
 
 @media screen and (min-width: 768px){
 	section.init{
-		height: 100vh;
+		/*height: 100vh;*/
+	}
+	.icon{
+		display: none !important;
 	}
 }
+
+@media screen and (max-width: 767px){
+	/*section.init{
+		height: 100vh;
+	}*/
+	.nav ul{
+		display: none !important;
+	}
+}
+
 
 @media screen and (max-width: 550px){
 	.explana h1{
@@ -117,10 +151,7 @@ header .explana p{
 		align-items: center !important;
 		height: 100px;
 	}
-	.nav h2{
-		font-size: 1.5rem !important;
-		margin: 0 !important;
-	}
+
 	.cta{
 		width: 100% !important;
 	}
@@ -185,9 +216,14 @@ header .explana p{
 }
 
 
+.nav h2{
+		font-size: 1.5rem !important;
+		margin: 0 !important;
+	}
 
-
-
+.call{
+	padding-top: 50px;
+}
 
 
 /* Main content */
@@ -395,9 +431,41 @@ form{
 }
 
 
+.foot{
+	padding: 20px 0;
+	background-color: #fff;
+}
+
+.foot p{
+	text-align: center;
+	color: #000;
+	margin: 0;
+	font-weight: bold;
+	/*font-size: 18px;*/
+}
+
+.foot a{
+	text-decoration: none !important;
+}
+
+.foot a:hover{
+	opacity: 0.85;
+}
+
+.foot .icons{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.foot img{
+	height: 20px;
+	width: 20px;
+	margin: 0 10px;
+}
 
 
-
+/*https://youtu.be/Umuf8-z5hjo*/
 
 
 
