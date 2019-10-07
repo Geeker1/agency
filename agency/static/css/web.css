@@ -22,8 +22,7 @@ h1, h2, h3,h4,h5,h6{
 	justify-content: center;
 	font-size: 18px !important;
 	position: relative;
-	background-image: linear-gradient(to right top, #21638c, #2a6591, #346695, #3d6899, #46699d);
-}
+background-image: linear-gradient(to right bottom, #0f2c3e, #133950, #174764, #1c5577, #21638c);}
 
 /*.container{
 	height: 100% ;
@@ -151,7 +150,8 @@ svg path{
 
 .header-content,.header-img{
 	margin: 20px 0;
-	letter-spacing: 1px;
+	/*letter-spacing: 1px;*/
+	word-spacing: 3px;
 }
 
 
@@ -164,6 +164,7 @@ svg path{
 
 .header-text{
 	font-weight: bold;
+	letter-spacing: 1px !important;
 }
 
 .nav a:hover{
@@ -230,8 +231,7 @@ section.illustrations{
 
 
 .man{
-	background-image: linear-gradient(to right top, #21638c, #2a6591, #346695, #3d6899, #46699d);
-
+background-image: linear-gradient(to right bottom, #0f2c3e, #133950, #174764, #1c5577, #21638c);
 }
 
 .describing{
@@ -357,8 +357,7 @@ section .describing h6{
 .contact{
 	margin-top: 50px;
 	padding-bottom: 30px;
-	background-image: linear-gradient(to right top, #21638c, #2a6591, #346695, #3d6899, #46699d);
-}
+background-image: linear-gradient(to right bottom, #0f2c3e, #133950, #174764, #1c5577, #21638c);}
 
 .contact img{
 	width: 100%;
@@ -401,12 +400,11 @@ section .describing h6{
 
 .foot{
 	padding: 20px 0;
-	background-color: #fff;
+	background-color: #0f2c3e;
 }
 
 .foot p{
 	text-align: center;
-	color: #000;
 	margin: 0;
 	font-weight: bold;
 	/*font-size: 18px;*/
@@ -414,10 +412,11 @@ section .describing h6{
 
 .foot a{
 	text-decoration: none !important;
+	color: rgba(0, 170, 170, 1);
 }
 
 .foot a:hover{
-	opacity: 0.85;
+	color:rgba(0, 170, 170, 0.8);
 }
 
 .foot .icons{
