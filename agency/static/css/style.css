@@ -9,6 +9,17 @@ body
 }
 
 
+/*
+.work{
+	height: 100%;
+}
+
+.work p{
+	height: 100%;
+}*/
+
+
+
 .list{
 	display: flex;
 	flex-wrap: wrap;
@@ -114,6 +125,11 @@ header .explana p{
 	.icon{
 		display: none !important;
 	}
+
+	.explana{
+		margin-top: 30px;
+	}
+
 }
 
 @media screen and (max-width: 767px){
@@ -123,6 +139,17 @@ header .explana p{
 	.nav ul{
 		display: none !important;
 	}
+
+	.text-2{
+		flex-direction: column-reverse !important;
+	}
+
+}
+
+@media screen and (width: 768px){
+	.text-2{
+		flex-direction: column-reverse !important;
+	}
 }
 
 
@@ -131,13 +158,23 @@ header .explana p{
 		font-size: 30px;
 	}
 
+	.text-2{
+		flex-direction: column-reverse !important;
+	}
+
+	.cti{
+		width: 100% !important;
+	}
+
+
+
 	section.init{
 		height: 90vh !important;
 	}
 
 	.ad-img{
 		object-fit: cover;
-		object-position: left;
+		object-position: right;
 	}
 
 	.video h1{
@@ -202,7 +239,7 @@ header .explana p{
 }
 
 .nav{
-	padding: 25px;
+	padding: 40px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -222,6 +259,11 @@ header .explana p{
 .nav li a{
 	text-decoration: none;
 	color: inherit;
+	font-weight: bold;
+}
+
+.nav li a:hover{
+	opacity: 0.8;
 }
 
 
@@ -271,11 +313,11 @@ header .explana p{
 
 .work img{
 	background: linear-gradient(77deg, rgba(25,119,126,1) 35%, rgba(26,30,45,1) 92%);
-	width: 70px;
-	height: 70px;
+	width: 50px;
+	height: 50px;
 	border-radius: 100px;
 	box-shadow: 0px 3px 20px 2px rgba(0,0,0,0.28);
-	padding: 20px;
+	padding: 10px;
 }
 
 .head-text{
@@ -303,6 +345,11 @@ section.img-text{
 	padding-bottom: 15px;
 	padding-top: 15px;
 	/*height: 100vh;*/
+}
+
+.bg-image{
+	display: flex;
+	justify-content: center;
 }
 
 .bg-image img{
@@ -491,20 +538,18 @@ input:invalid{
 }
 
 .work{
-	height: 100% !important;
+	/*height: 100% !important;*/
 }
 
 .ini .col-sm-4{
 	margin: 10px 0;
 }
 
-.form-col{
-	background-color: #233;
-}
 
 form{
-	padding: 30px;
+	padding: 20px;
 	color: #fff;
+	background-color: #233;
 }
 
 .foot{
